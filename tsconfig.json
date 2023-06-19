@@ -14,9 +14,22 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@api/*": ["api/*"],
+      "@config/*": ["config/*"],
+      "@templates/*": ["@templates/*"],
+      "@styles/*": ["styles/*"],
+      "@typings/*": ["typings/*"],
+      "@features/*": ["features/*"],
+      "@fonts": ["./styles/font/*"]
+    },
+    "allowImportingTsExtensions": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
