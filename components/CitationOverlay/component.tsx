@@ -4,6 +4,7 @@ import React, { FC } from "react";
 
 import { Container } from "../Container";
 import { Props } from "./props";
+import { TimDevIcon } from "./libs/TimDevIcon";
 
 const textVariants = {
   initial: {
@@ -45,7 +46,9 @@ export const CitationOverlay: FC<Props> = ({ citation }: Props) => {
             delay: 3.0,
             duration: 1.2,
           }}
-        ></motion.div>
+        >
+          <TimDevIcon className="w-10 mb-2 fill-current md:ml-auto dark:text-white-900 text-black-900" />
+        </motion.div>
         <motion.p
           className="mt-4 mb-2 text-xl font-medium leading-none md:text-2xl dark:text-white-900 text-black-900 md:my-0"
           variants={textVariants}
