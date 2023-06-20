@@ -1,4 +1,4 @@
-import { Hero, CitationOverlay, TechStack } from "components";
+import { Hero, CitationOverlay, TechStack, Header } from "components";
 import { motion } from "framer-motion";
 import { GetStaticProps } from "next";
 import Head from "next/head";
@@ -44,6 +44,7 @@ const Index = () => {
           duration: 1.0,
         }}
       >
+        <Header />
         <Hero />
         <TechStack />
       </motion.div>
