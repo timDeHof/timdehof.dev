@@ -11,37 +11,41 @@ export const Hero: FC = () => {
 
   return (
     <Container className="pt-24 md:pt-32">
-      <motion.img
-        src="/images/me-final.png"
-        alt="me"
-        className="rounded-full w-28 h-28 md:w-32 md:h-32 mt-36"
-        variants={{
-          hidden: {
-            scale: 0,
-            opacity: 0,
-          },
-          visible: {
-            scale: 1,
-            opacity: 1,
-          },
-        }}
-        transition={{
-          damping: 5,
-          mass: 1,
-          delay: 0.2,
-        }}
-        initial="hidden"
-        animate="visible"
-      />
-      <div className="flex items-center">
-        <h1 className="mt-6 mb-6 text-4xl font-bold md:mt-8 md:mb-8 md:text-5xl text-black-900 dark:text-white-900">
-          {t("hero.title")}
-        </h1>
-        <HandWave className="text-4xl md:text-5xl" />
+      <div className=" mt-36 flex flex-col md:flex-row items-center justify-center gap-4">
+        <motion.img
+          src="/images/me-final.png"
+          alt="me"
+          className="rounded-full w-28 h-28 md:w-32 md:h-32"
+          variants={{
+            hidden: {
+              scale: 0,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+            },
+          }}
+          transition={{
+            damping: 5,
+            mass: 1,
+            delay: 0.2,
+          }}
+          initial="hidden"
+          animate="visible"
+        />
+        <div className="flex flex-col">
+          <div className="flex items-center">
+            <h1 className="mt-6 mb-6 text-4xl font-bold md:mt-8 md:mb-8 md:text-5xl text-black-900 dark:text-white-900">
+              {t("hero.title")}
+            </h1>
+            <HandWave className="text-4xl md:text-5xl" />
+          </div>
+          <p className="text-xl font-bold tracking-normal md:text-3xl text-black-700 dark:text-white-700">
+            {t("hero.p0")}
+          </p>
+        </div>
       </div>
-      <p className="text-xl font-bold tracking-normal md:text-3xl text-black-700 dark:text-white-700">
-        {t("hero.p0")}
-      </p>
       <div className="flex mt-8">
         <MediaIcon
           icon={<FaGithub className="w-6 h-6 md:w-7 md:h-7" />}

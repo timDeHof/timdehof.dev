@@ -29,7 +29,7 @@ export const Header: FC = () => {
     <div
       className={clsx(
         "fixed z-20 w-full opacity-90 bg-lightTheme dark:bg-darkTheme transition-top duration-300",
-        visible ? "top-0" : "-top-28"
+        visible ? "top-0" : "-top-36"
       )}
     >
       <Container className="flex items-center justify-between w-auto py-5 md:py-9 text-black-900 dark:text-white-900">
