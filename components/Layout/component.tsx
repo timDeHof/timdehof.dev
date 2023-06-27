@@ -4,7 +4,7 @@ import { Props } from "./props";
 
 export const Layout: FC<Props> = ({ children }: Props) => {
   return (
-    <div className="min-h-screen font-sans bg-lightTheme dark:bg-darkTheme transition-colors">
+    <div className="min-h-screen font-sans bg-lightTheme dark:bg-gray-900 transition-colors">
       {children}
     </div>
   );

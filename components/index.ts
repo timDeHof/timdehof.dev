@@ -5,3 +5,5 @@ export * from "./CitationOverlay";
 export * from "./Layout";
 export * from "./Section";
 export * from "./TechStack";
+export * from "./Logo";
+export * from "./Header";

@@ -1,8 +1,8 @@
 import React, { FC, HTMLAttributes } from "react";
 
-type Props = HTMLAttributes<HTMLOrSVGElement>;
+type Props = HTMLAttributes<HTMLAnchorElement>;
 
-export const TimDevIcon: FC<Props> = ({ className }: Props) => {
+export const Logo: FC<Props> = ({ className }: Props) => {
   return (
     <svg
       className={className}
@@ -16,7 +16,7 @@ export const TimDevIcon: FC<Props> = ({ className }: Props) => {
       <g />
       <path
         stroke="currentColor"
-        strokeWidth="32"
+        stroke-width="32"
         fill="none"
         d="M0 16h144v128H80V64m-64 0v96"
       />
