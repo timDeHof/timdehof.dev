@@ -7,3 +7,4 @@ export * from "./Section";
 export * from "./TechStack";
 export * from "./Logo";
 export * from "./Header";
+export * from "./DayNightToggle";
