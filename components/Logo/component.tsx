@@ -16,7 +16,7 @@ export const Logo: FC<Props> = ({ className }: Props) => {
       <g />
       <path
         stroke="currentColor"
-        stroke-width="32"
+        strokeWidth="32"
         fill="none"
         d="M0 16h144v128H80V64m-64 0v96"
       />

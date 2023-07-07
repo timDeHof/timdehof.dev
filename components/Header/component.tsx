@@ -4,10 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import React, { FC, useCallback, useEffect, useRef, useState } from "react";
-import { HiMoon, HiSun } from "react-icons/hi";
-
 import { useHeaderVisible } from "./libs/useHeaderVisible";
-
+import { DayNightToggle } from "../DayNightToggle";
 enum Themes {
   light = "light",
   dark = "dark",
@@ -22,9 +20,25 @@ export const Header: FC = () => {
 
   const toggleTheme = useCallback(() => {
     setTheme(theme === Themes.light ? Themes.dark : Themes.light);
-  }, [setTheme, theme]);
+    setMounted(!mounted);
+  }, [setTheme, theme, mounted]);
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    if (mounted) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+
+    if (theme === Themes.dark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    setMounted(true);
+  }, [mounted, theme]);
   return (
     <div
       className={clsx(
@@ -36,20 +50,11 @@ export const Header: FC = () => {
         <Link href="/">
           <Logo className="w-16 fill-current md:w-20 dark:text-white-900 text-black-900" />
         </Link>
-        <div className="flex items-center">
-          <button
-            className="items-center justify-center w-12 h-12 rounded-md dark:bg-gray-900 bg-pink focus:outline-none focus:ring-2 ring-blue-700 d-flex"
-            onClick={toggleTheme}
-          >
-            {mounted ? (
-              theme === Themes.light ? (
-                <HiMoon className="inline w-6 h-6 ml-1" />
-              ) : (
-                <HiSun className="inline w-6 h-6" />
-              )
-            ) : null}
-          </button>
-        </div>
+        <DayNightToggle
+          mounted={mounted}
+          theme={theme as Themes}
+          toggleTheme={toggleTheme}
+        />
       </Container>
     </div>
   );
