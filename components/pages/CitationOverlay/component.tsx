@@ -1,10 +1,9 @@
-import { motion } from "framer-motion";
-
 import React, { FC } from "react";
-import { userData } from "../../../constants";
-import { Container } from "../../ui/Container";
+import { motion } from "framer-motion";
+import { Container } from "@/components/ui";
 import { Props } from "./props";
 import { TimDevIcon } from "./libs/TimDevIcon";
+import { userData } from "@/constants";
 
 const textVariants = {
   initial: {

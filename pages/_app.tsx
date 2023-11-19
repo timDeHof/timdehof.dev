@@ -3,8 +3,8 @@ import type { ReactElement, ReactNode } from "react";
 import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import "../styles/globals.css";
-import { CitationOverlay } from "components";
+import "@/styles/globals.css";
+import { CitationOverlay } from "@/components/pages";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
