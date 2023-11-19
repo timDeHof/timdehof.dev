@@ -1,17 +1,17 @@
 import clsx from "clsx";
 import { Container, Logo } from "components";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
 import React, { FC, useCallback, useEffect, useRef, useState } from "react";
 import { useHeaderVisible } from "./libs/useHeaderVisible";
-import { DayNightToggle } from "../DayNightToggle";
+import { DayNightToggle } from "../../../ui/DayNightToggle";
 enum Themes {
   light = "light",
   dark = "dark",
 }
 
-export const Header: FC = () => {
+const Navbar: FC = () => {
   const visible = useHeaderVisible();
   const ref = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState(false);
@@ -59,3 +59,5 @@ export const Header: FC = () => {
     </div>
   );
 };
+
+export default Navbar;
