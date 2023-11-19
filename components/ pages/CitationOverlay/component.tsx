@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { useTranslation } from "next-i18next";
-import React, { FC } from "react";
 
-import { Container } from "../Container";
+import React, { FC } from "react";
+import { userData } from "../../../constants";
+import { Container } from "../../ui/Container";
 import { Props } from "./props";
 import { TimDevIcon } from "./libs/TimDevIcon";
 
@@ -16,7 +16,7 @@ const textVariants = {
 };
 
 export const CitationOverlay: FC<Props> = ({ citation }: Props) => {
-  const { t } = useTranslation();
+  const { citationData } = userData;
 
   return (
     <motion.div
@@ -59,7 +59,7 @@ export const CitationOverlay: FC<Props> = ({ citation }: Props) => {
             duration: 1.2,
           }}
         >
-          {t("citation.content")}
+          {citationData.content}
         </motion.p>
         <motion.p
           className="text-base md:text-right dark:text-white-700 text-black-700"
@@ -71,7 +71,7 @@ export const CitationOverlay: FC<Props> = ({ citation }: Props) => {
             duration: 1.2,
           }}
         >
-          {t("citation.author")}
+          {citationData.author}
         </motion.p>
       </Container>
     </motion.div>

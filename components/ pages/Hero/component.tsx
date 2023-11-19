@@ -1,17 +1,15 @@
 import { Container, MediaIcon } from "components";
 import { motion } from "framer-motion";
 import React, { FC } from "react";
-import { useTranslation } from "next-i18next";
 import { FaGithub, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
-
+import { userData } from "../../../constants";
 import { HandWave } from "./libs/HandWave";
 
 export const Hero: FC = () => {
-  const { t } = useTranslation("common");
-
+  const { hero } = userData;
   return (
     <Container className="pt-24 md:pt-32">
-      <div className=" mt-36 flex flex-col md:flex-row items-center justify-center gap-4">
+      <div className="flex flex-col items-center justify-center gap-4 mt-36 md:flex-row">
         <motion.img
           src="/images/me-final.png"
           alt="me"
@@ -37,12 +35,12 @@ export const Hero: FC = () => {
         <div className="flex flex-col">
           <div className="flex items-center">
             <h1 className="mt-6 mb-6 text-4xl font-bold md:mt-8 md:mb-8 md:text-5xl text-black-900 dark:text-white-900">
-              {t("hero.title")}
+              {hero.title}
             </h1>
             <HandWave className="text-4xl md:text-5xl" />
           </div>
           <p className="text-xl font-bold tracking-normal md:text-3xl text-black-700 dark:text-white-700">
-            {t("hero.p0")}
+            {hero.p0}
           </p>
         </div>
       </div>
@@ -69,15 +67,15 @@ export const Hero: FC = () => {
       </div>
       <div className="mt-10">
         <p className="mb-8 text-base md:text-xl dark:text-white-700 text-black-700">
-          {t("hero.des0")}
+          {hero.des0}
         </p>
         <p className="mb-8 text-base md:text-xl dark:text-white-700 text-black-700">
-          {t("hero.des1")}
+          {hero.des1}
           <br />
-          {t("hero.des2")}
+          {hero.des2}
         </p>
         <p className="mb-8 text-base md:text-xl dark:text-white-700 text-black-700">
-          {t("hero.des3")}
+          {hero.des3}
         </p>
       </div>
     </Container>
