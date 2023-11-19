@@ -24,10 +24,12 @@
       "@api/*": ["api/*"],
       "@config/*": ["config/*"],
       "@templates/*": ["@templates/*"],
-      "@styles/*": ["styles/*"],
+      "@/styles/*": ["styles/*"],
       "@typings/*": ["typings/*"],
       "@features/*": ["features/*"],
-      "@fonts": ["./styles/font/*"]
+      "@fonts": ["./styles/font/*"],
+      "@/components/*": ["components/*"],
+      "@/constants": ["constants"]
     },
     "allowImportingTsExtensions": true
   },

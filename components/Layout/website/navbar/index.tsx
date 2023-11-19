@@ -1,11 +1,11 @@
+import React, { FC, useCallback, useEffect, useRef, useState } from "react";
 import clsx from "clsx";
-import { Container, Logo } from "components";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
-import React, { FC, useCallback, useEffect, useRef, useState } from "react";
+import { Container, Logo, DayNightToggle } from "@/components/ui";
 import { useHeaderVisible } from "./libs/useHeaderVisible";
-import { DayNightToggle } from "../../../ui/DayNightToggle";
+
 enum Themes {
   light = "light",
   dark = "dark",

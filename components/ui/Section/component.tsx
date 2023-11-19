@@ -1,5 +1,5 @@
-import { motion, useAnimation } from "framer-motion";
 import React, { FC, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import { SectionHeader } from "./libs/SectionHeader";

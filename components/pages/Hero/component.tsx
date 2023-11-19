@@ -1,9 +1,9 @@
-import { Container, MediaIcon } from "components";
-import { motion } from "framer-motion";
 import React, { FC } from "react";
+import { motion } from "framer-motion";
+import { Container, MediaIcon } from "@/components/ui";
 import { FaGithub, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
-import { userData } from "../../../constants";
 import { HandWave } from "./libs/HandWave";
+import { userData } from "@/constants";
 
 export const Hero: FC = () => {
   const { hero } = userData;

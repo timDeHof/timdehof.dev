@@ -1,8 +1,8 @@
 import type { ReactElement } from "react";
 import Head from "next/head";
-import { Hero, TechStack } from "components";
-import WebsiteLayout from "../components/Layout/website";
-import { userData } from "../constants";
+import { Hero, TechStack } from "@/components/pages";
+import WebsiteLayout from "@/components/Layout/website";
+import { userData } from "@/constants";
 export default function Home() {
   const { headTitle } = userData;
 

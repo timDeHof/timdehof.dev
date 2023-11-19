@@ -1,9 +1,8 @@
-import { motion } from "framer-motion";
-import { Container, Section } from "components";
-import { useAnimation } from "framer-motion";
-import { userData } from "../../../constants";
 import React, { FC, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import { InView, useInView } from "react-intersection-observer";
+import { userData } from "@/constants";
+import { Container, Section } from "@/components/ui";
 import { FrontEndSkills, BackendSkills, ToolsSkills } from "./libs/skills";
 
 export const TechStack: FC = () => {
