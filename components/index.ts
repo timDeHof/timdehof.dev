@@ -1,10 +1,10 @@
 export * from "./ui/Container";
 export * from "./ui/MediaIcon";
-export * from "./ pages/Hero";
-export * from "./ pages/CitationOverlay";
+export * from "./pages/Hero";
+export * from "./pages/CitationOverlay";
 export * from "./Layout";
 export * from "./ui/Section";
-export * from "./ pages/TechStack";
+export * from "./pages/TechStack";
 export * from "./ui/Logo";
-export * from "./ui/Header";
+export * from "./Layout/website/navbar";
 export * from "./ui/DayNightToggle";
