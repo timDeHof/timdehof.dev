@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -25,27 +21,13 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@api/*": [
-        "api/*"
-      ],
-      "@config/*": [
-        "config/*"
-      ],
-      "@templates/*": [
-        "@templates/*"
-      ],
-      "@styles/*": [
-        "styles/*"
-      ],
-      "@typings/*": [
-        "typings/*"
-      ],
-      "@features/*": [
-        "features/*"
-      ],
-      "@fonts": [
-        "./styles/font/*"
-      ]
+      "@api/*": ["api/*"],
+      "@config/*": ["config/*"],
+      "@templates/*": ["@templates/*"],
+      "@styles/*": ["styles/*"],
+      "@typings/*": ["typings/*"],
+      "@features/*": ["features/*"],
+      "@fonts": ["./styles/font/*"]
     },
     "allowImportingTsExtensions": true
   },
@@ -56,7 +38,5 @@
     "next-seo.config.js",
     ".next/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
