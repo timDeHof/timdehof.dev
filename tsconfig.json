@@ -29,7 +29,8 @@
       "@features/*": ["features/*"],
       "@fonts": ["./styles/font/*"],
       "@/components/*": ["components/*"],
-      "@/constants": ["constants"]
+      "@/constants": ["constants"],
+      "@/lib/*": ["lib/*"]
     },
     "allowImportingTsExtensions": true
   },

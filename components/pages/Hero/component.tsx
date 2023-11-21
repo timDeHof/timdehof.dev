@@ -8,12 +8,12 @@ import { userData } from "@/constants";
 export const Hero: FC = () => {
   const { hero } = userData;
   return (
-    <Container className="pt-24 md:pt-32">
-      <div className="flex flex-col items-center justify-center gap-4 mt-36 md:flex-row">
+    <Container maxWidth="xl" className="px-4 pt-24 md:pt-32">
+      <div className="flex flex-col gap-4 mt-36">
         <motion.img
           src="/images/me-final.png"
           alt="me"
-          className="rounded-full w-28 h-28 md:w-32 md:h-32"
+          className="w-32 h-32 rounded-full md:w-48 md:h-48"
           variants={{
             hidden: {
               scale: 0,

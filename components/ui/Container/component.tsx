@@ -24,7 +24,7 @@ export const Container: FC<Props> = ({
     <Component
       id={id}
       className={clsx(
-        "px-4 mx-auto max-w-screen-md",
+        "container mx-auto max-w-screen-xl",
         maxSize[maxWidth],
         className
       )}

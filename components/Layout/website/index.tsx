@@ -1,14 +1,20 @@
 import { Inter } from "next/font/google";
 
-import Navbar from "./navbar";
+import Navbar from "../../ui/navbar";
 import Layout from "..";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const WebsiteLayout = ({ children }: { children: React.ReactNode }) => {
+const WebsiteLayout = ({
+  children,
+  showNavbar,
+}: {
+  children: React.ReactNode;
+  showNavbar: boolean;
+}) => {
   return (
     <Layout>
-      <Navbar />
+      {showNavbar && <Navbar />}
       <main className={`pt-14 ${inter.className}`}>{children}</main>
     </Layout>
   );

@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import { textVariant } from "@/lib/utils/motion";
 import { SectionHeader } from "./libs/SectionHeader";
 import { Props } from "./props";
 

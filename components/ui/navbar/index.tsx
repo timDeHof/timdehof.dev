@@ -11,7 +11,7 @@ enum Themes {
   dark = "dark",
 }
 
-const Navbar: FC = () => {
+export const Navbar: FC = () => {
   const visible = useHeaderVisible();
   const ref = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState(false);
@@ -46,7 +46,10 @@ const Navbar: FC = () => {
         visible ? "top-0" : "-top-36"
       )}
     >
-      <Container className="flex items-center justify-between w-auto py-5 md:py-9 text-black-900 dark:text-white-900">
+      <Container
+        maxWidth="xl"
+        className="flex items-center justify-between w-auto px-4 text-black-900 dark:text-white-900"
+      >
         <Link href="/">
           <Logo className="w-16 fill-current md:w-20 dark:text-white-900 text-black-900" />
         </Link>
@@ -59,5 +62,3 @@ const Navbar: FC = () => {
     </div>
   );
 };
-
-export default Navbar;
