@@ -87,24 +87,24 @@ export const fadeIn = (
   };
 };
 
-export const zoomIn = (delay: number, duration: number): AnimationVariant => {
-  return {
-    hidden: {
-      scale: 0,
-      opacity: 0,
-    },
-    show: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        type: "tween",
-        delay,
-        duration,
-        ease: "easeOut",
-      },
-    },
-  };
-};
+// export const zoomIn = (delay: number, duration: number): AnimationVariant => {
+//   return {
+//     hidden: {
+//       scale: 0,
+//       opacity: 0,
+//     },
+//     show: {
+//       scale: 1,
+//       opacity: 1,
+//       transition: {
+//         type: "tween",
+//         delay,
+//         duration,
+//         ease: "easeOut",
+//       },
+//     },
+//   };
+// };
 
 export const slideIn = (
   direction: Direction,
