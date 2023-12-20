@@ -19,7 +19,7 @@ export const CitationOverlay: FC<Props> = ({ citation }: Props) => {
 
   return (
     <motion.div
-      className="absolute flex items-center justify-center w-full"
+      className="absolute flex items-center w-full"
       variants={{
         initial: {
           opacity: 1,
@@ -49,7 +49,7 @@ export const CitationOverlay: FC<Props> = ({ citation }: Props) => {
           <TimDevIcon className="w-10 mb-2 fill-current md:ml-auto dark:text-white-900 text-black-900" />
         </motion.div>
         <motion.p
-          className="mt-4 mb-2 text-2xl font-medium leading-none md:text-3xl dark:text-white-900 text-black-900 md:my-0"
+          className="my-0 mt-4 mb-2 text-xl font-medium leading-none md:text-2xl dark:text-white-900 text-black-900 md:"
           variants={textVariants}
           initial="initial"
           animate="visible"

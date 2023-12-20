@@ -1,8 +1,10 @@
 export interface ExperienceCardProps {
-  title: string;
-  icon: string;
-  iconBg: string;
-  date: string;
-  points: string[];
-  companyName: string;
+  icon: {
+    icon: React.ReactElement;
+    iconStyle: { background: string };
+  };
+  date?: string;
+  title?: string;
+  subtitle?: string;
+  desc?: string;
 }

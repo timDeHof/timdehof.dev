@@ -68,12 +68,6 @@ export const FrontEndSkills: Skill[] = [
     className: "text-sky-600",
   },
   {
-    name: "Styled Components",
-    icon: SiStyledcomponents,
-    link: "https://styled-components.com/",
-    className: "text-fuchsia-600",
-  },
-  {
     name: "Tailwind",
     icon: SiTailwindcss,
     link: "https://tailwindcss.com/",
@@ -85,19 +79,6 @@ export const FrontEndSkills: Skill[] = [
     link: "https://www.framer.com/motion/",
     className: "text-rose-500",
   },
-
-  {
-    name: "React Icons",
-    icon: FaReact,
-    link: "https://react-icons.github.io/react-icons/",
-    className: "text-red-600",
-  },
-  {
-    name: "Styled Icons",
-    icon: SiStyledcomponents,
-    link: "https://styled-icons.dev/",
-    className: "text-red-600",
-  },
 ];
 
 export const BackendSkills: Skill[] = [
@@ -105,7 +86,7 @@ export const BackendSkills: Skill[] = [
     name: "Postgres",
     icon: SiPostgresql,
     link: "https://www.postgresql.org/",
-    className: "text-sky-400",
+    className: "text-sky-800",
   },
   {
     name: "Express",
@@ -165,12 +146,6 @@ export const ToolsSkills: Skill[] = [
     className: "text-rose-600",
   },
   {
-    name: "GitHub Actions",
-    icon: SiGithubactions,
-    link: "https://docs.github.com/en/actions",
-    className: "text-sky-400",
-  },
-  {
     name: "Vercel",
     icon: SiVercel,
     link: "https://vercel.com/",
@@ -183,7 +158,7 @@ export const ToolsSkills: Skill[] = [
     className: "text-orange-400",
   },
   {
-    name: "Github",
+    name: "Git",
     icon: SiGithub,
     link: "https://github.com/",
     className: "text-gray-700 dark:text-slate-50",
@@ -193,11 +168,5 @@ export const ToolsSkills: Skill[] = [
     icon: SiPrisma,
     link: "https://www.prisma.io/",
     className: "text-sky-800",
-  },
-  {
-    name: "Postman",
-    icon: SiPostman,
-    link: "https://www.postman.com/",
-    className: "text-amber-600",
   },
 ];

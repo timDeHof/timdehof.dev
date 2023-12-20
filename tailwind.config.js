@@ -10,6 +10,11 @@ const config = {
   },
   theme: {
     extend: {
+      colors: {
+        primary: "#1d1836",
+        secondary: "#05bb64",
+        tertiary: "#444444",
+      },
       keyframes: {
         fade: {
           // @ts-ignore

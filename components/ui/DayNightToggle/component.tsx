@@ -13,7 +13,6 @@ export const DayNightToggle: FC<ToggleProps> = ({
   theme,
   toggleTheme,
 }) => {
-  console.log("daynightToggle-theme", theme);
   const spring = {
     type: "spring",
     stiffness: 700,

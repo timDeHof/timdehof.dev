@@ -1,10 +1,11 @@
 import React, { FC, useCallback, useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
-import { Container, Logo, DayNightToggle } from "@/components/ui";
+import { Container, DayNightToggle } from "@/components/ui";
+import { navLinks } from "@/constants";
 import { useHeaderVisible } from "./libs/useHeaderVisible";
+import { Logo } from "../Logo/component";
 
 enum Themes {
   light = "light",
@@ -12,11 +13,10 @@ enum Themes {
 }
 
 export const Navbar: FC = () => {
+  const [active, setActive] = useState("");
   const visible = useHeaderVisible();
-  const ref = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const router = useRouter();
 
   const toggleTheme = useCallback(() => {
     setTheme(theme === Themes.light ? Themes.dark : Themes.light);
@@ -39,6 +39,7 @@ export const Navbar: FC = () => {
     }
     setMounted(true);
   }, [mounted, theme]);
+
   return (
     <div
       className={clsx(
@@ -46,13 +47,24 @@ export const Navbar: FC = () => {
         visible ? "top-0" : "-top-36"
       )}
     >
-      <Container
-        maxWidth="xl"
-        className="flex items-center justify-between w-auto px-4 text-black-900 dark:text-white-900"
-      >
-        <Link href="/">
-          <Logo className="w-16 fill-current md:w-20 dark:text-white-900 text-black-900" />
+      <Container className="flex items-center justify-between w-auto py-5 md:py-9 text-black-900 dark:text-white-900">
+        <Link className="flex items-center" href="/">
+          <Logo className="text-black w-14 h-14 dark:text-white" />
         </Link>
+        <ul className="flex gap-10 list-none">
+          {navLinks.map(({ id, title }: { id: string; title: string }) => (
+            <li
+              key={id}
+              className={`${
+                active === title ? "text-black-900" : "text-secondary"
+              } dark:text-white-900`}
+              onClick={() => setActive(title)}
+            >
+              <Link href={`#${id}`}>{title}</Link>
+            </li>
+          ))}
+          {}
+        </ul>
         <DayNightToggle
           mounted={mounted}
           theme={theme as Themes}

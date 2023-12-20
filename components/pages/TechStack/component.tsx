@@ -28,72 +28,90 @@ export const TechStack: FC = () => {
   return (
     <Section
       id="tech-stack"
-      className={`mt32 px-4 mx-auto flex flex-col`}
+      className="flex flex-col max-w-5xl mx-auto mt-20"
       title={skills.title}
       description={skills.description}
     >
       <Container
-        maxWidth="xl"
-        className="grid w-full grid-cols-1 gap-8 p-4 sm:grid-cols-2 md:grid-cols-3"
+        maxWidth="2xl"
+        className="grid w-full grid-cols-1 gap-8 mt-10 sm:grid-cols-2 md:grid-cols-3"
       >
         <article
           className="relative flex-1 rounded-xl border border-zinc-400
-        pt-4 px-2 text-center duration-300 after:absolute after:-left-[1px] after:top-8 after:h-20 after:w-[2px] after:bg-gradient-to-t after:from-transparent after:via-sky-500 after:to-transparent after: transition-all after:content-[''] hover:after:top-32 dark:border-slate-50/20 dark:after:via-rose-500 sm:col-span-2 md:col-span-1"
+        p-4 text-center duration-300 after:absolute after:-left-[1px] after:top-8 after:h-20 after:w-[2px] after:bg-gradient-to-t after:from-transparent after:via-sky-500 after:to-transparent after: transition-all"
         >
-          <p className="font-mono text-xl font-semibold">Front-end</p>
-          <p className="pt-1 pb-4 text-sm">My Bread and butter</p>
-          <ul className="grid content-center grid-cols-2 gap-1 pb-4 justify-items-center">
-            {FrontEndSkills.map((skill, index) => (
-              <motion.li
-                key={index}
-                className="flex items-center gap-x-2"
-                variants={itemVariants}
-                initial="hidden"
-                animate="visible"
-              >
-                <skill.icon className={`h-5 w-5 ${skill.className}`} />
-                {skill.name}
-              </motion.li>
-            ))}
-          </ul>
+          <p className="font-mono text-xl font-semibold text-secondary">
+            Front-end
+          </p>
+          <p className="pt-1 pb-2 text-md">My Bread and butter</p>
+          <div className="flex items-center justify-center">
+            <ul className="grid grid-cols-2 pl-4 gap-y-2 gap-x-4 w-fit justify-items-start">
+              {FrontEndSkills.map((skill, index) => (
+                <motion.li
+                  key={index}
+                  className="flex items-center text-md w-fit gap-x-2"
+                  variants={itemVariants}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <skill.icon className={`h-8 w-8 ${skill.className}`} />
+                  {skill.name}
+                </motion.li>
+              ))}
+            </ul>
+          </div>
         </article>
-        <article className=" flex-1 rounded-xl border border-zinc-400 p-4 text-center transition-[border] duration-300 dark:border-slate-50/20">
-          <p className="font-mono text-xl font-semibold">Back-end</p>
-          <p className="pt-1 pb-4 text-sm">
+        <article
+          className="relative flex-1 rounded-xl border border-zinc-400
+        p-4 text-center duration-300 after:absolute after:-left-[1px] after:top-8 after:h-20 after:w-[2px] after:bg-gradient-to-t after:from-transparent after:via-sky-500 after:to-transparent after: transition-all"
+        >
+          <p className="font-mono text-xl font-semibold text-secondary">
+            Back-end
+          </p>
+          <p className="pt-1 pb-2 text-md">
             Aspiring, but not my strongest suit
           </p>
-          <ul className="grid content-center grid-cols-2 gap-1 justify-items-center">
-            {BackendSkills.map((skill, index) => (
-              <motion.li
-                key={index}
-                className="flex items-center gap-x-2"
-                variants={itemVariants}
-                initial="hidden"
-                animate="visible"
-              >
-                <skill.icon className={`h-5 w-5 ${skill.className}`} />
-                {skill.name}
-              </motion.li>
-            ))}
-          </ul>
+          <div className="flex items-center justify-center">
+            <ul className="grid grid-cols-2 pl-4 w-fit gap-y-2 gap-x-4 justify-items-start">
+              {BackendSkills.map((skill, index) => (
+                <motion.li
+                  key={index}
+                  className="flex items-center text-md w-fit gap-x-2"
+                  variants={itemVariants}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <skill.icon className={`h-8 w-8 ${skill.className}`} />
+                  {skill.name}
+                </motion.li>
+              ))}
+            </ul>
+          </div>
         </article>
-        <article className=" flex-1 rounded-xl border border-zinc-400 p-4 text-center transition-[border] duration-300 dark:border-slate-50/20">
-          <p className="font-mono text-xl font-semibold">Tools & Platform</p>
-          <p className="pt-1 pb-4 text-sm">Favorite kits to get things done.</p>
-          <ul className="grid content-center grid-cols-2 gap-1 justify-items-center">
-            {ToolsSkills.map((skill, index) => (
-              <motion.li
-                key={index}
-                className="flex items-center gap-x-2"
-                variants={itemVariants}
-                initial="hidden"
-                animate="visible"
-              >
-                <skill.icon className={`h-5 w-5 ${skill.className}`} />
-                {skill.name}
-              </motion.li>
-            ))}
-          </ul>
+        <article
+          className="relative flex-1 rounded-xl border border-zinc-400
+        p-4 text-center duration-300 after:absolute after:-left-[1px] after:top-8 after:h-20 after:w-[2px] after:bg-gradient-to-t after:from-transparent after:via-sky-500 after:to-transparent after: transition-all"
+        >
+          <p className="font-mono text-xl font-semibold text-secondary">
+            Tools & Platform
+          </p>
+          <p className="pt-1 pb-4 text-md">Favorite kits to get things done.</p>
+          <div className="flex items-center justify-center">
+            <ul className="grid grid-cols-2 gap-y-2 gap-x-6 w-fit justify-items-start">
+              {ToolsSkills.map((skill, index) => (
+                <motion.li
+                  key={index}
+                  className="flex items-center text-md w-fit gap-x-2"
+                  variants={itemVariants}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <skill.icon className={`h-8 w-8 ${skill.className}`} />
+                  {skill.name}
+                </motion.li>
+              ))}
+            </ul>
+          </div>
         </article>
       </Container>
     </Section>

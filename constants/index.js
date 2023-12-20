@@ -1,14 +1,34 @@
+export const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "tech",
+    title: "Tech",
+  },
+  {
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "work",
+    title: "Work",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
 export const userData = {
   headTitle: "Home | Timdev",
   hero: {
-    title: "Hi, I'm Tim!",
-    p0: "FullStack Developer with Mechanical Engineering Expertise",
+    title: "Hello, I'm Tim!",
+    p0: "A web developer with a unique background as a mechanical design engineer",
     p1: "Currently at",
     p2: "Previously",
-    des0: "I am a rising FullStack Developer with Mechanical Engineering Expertise",
-    des1: "I enjoy creating high-quality web-based apps with cutting edge technologies behind it.",
-    des2: "My technology stack includes Next.js, TypeScript and PostgreSQL.",
-    des3: "I am also currently learning more about Software engineering and DevOps.",
+    des0: "My journey into tech began with a comprehensive coding bootcamp, leading me to embrace fullstack technologies such as PostgreSQL, Express, React.js, and Node.js. My expertise lies in transforming initial concepts, sometimes just simple sketches, into fully-realized digital solutions, a skill refined during my mechanical design career. This ability to understand and deliver exactly what clients envision sets me apart in the software development field. I thrive on the rapid development and feedback loop of software projects, a refreshing change from the longer cycles in mechanical design. Currently seeking opportunities to bring my blend of design insight and technical skills to new and exciting projects, I am eager to connect with like-minded professionals and explore collaborative possibilities.",
   },
   projects: {
     title: "Projects",

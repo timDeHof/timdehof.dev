@@ -1,11 +1,13 @@
+import { Briefcase, GraduationCap } from "lucide-react";
 import { fullstack, polyhistor, unf } from "../../../../lib/assets";
 
 export const experiences = [
   {
     title: "Full stack Developer",
     companyName: "Fullstack Academy Coding Bootcamp",
-    icon: fullstack,
-    iconBg: "#383E56",
+    type: "Education",
+    icon: GraduationCap,
+    iconBg: "#00D8FF",
     date: "Feb 2022 - May 2022",
     points: [
       "Proficient in full-stack web development, including front-end and back-end skills, through immersive training in programming languages like JavaScript, HTML, CSS, and frameworks such as React and Node.js.",
@@ -17,7 +19,8 @@ export const experiences = [
   {
     title: "Mechanical Design Engineer",
     companyName: "Polyhistor International",
-    icon: polyhistor,
+    type: "Work",
+    icon: Briefcase,
     iconBg: "#E6DEDD",
     date: "Feb 2014 - Jan 2022",
     points: [
@@ -31,7 +34,8 @@ export const experiences = [
   {
     title: "Mechanical Technician",
     companyName: "Polyhistor International",
-    icon: polyhistor,
+    type: "Work",
+    icon: Briefcase,
     iconBg: "#E6DEDD",
     date: "Jan 2012 - Feb 2014",
     points: [
@@ -44,12 +48,16 @@ export const experiences = [
   {
     title: "College Student",
     companyName: "University of North Florida",
-    icon: unf,
+    type: "Education",
+    icon: GraduationCap,
     iconBg: "#383E56",
     date: "March 2007 - December 2011",
     points: [
       "Graduated with a Bachelors of science in Mechanical Engineering.",
       "Secured a cumulative GPA of 3.26",
     ],
+  },
+  {
+    type: "Star",
   },
 ];

@@ -9,11 +9,11 @@ export const SectionHeader: FC<Props> = ({
   className,
 }: Props) => {
   return (
-    <Container className={className}>
-      <h2 className="mb-4 text-2xl font-bold dark:text-white-900 text-black-900">
+    <Container className={className} maxWidth="2xl">
+      <h2 className="my-4 text-6xl font-bold text-center text-secondary">
         {title}
       </h2>
-      <p className="text-base md:text-xl dark:text-white-700 text-black-700">
+      <p className="mb-4 text-base lg:text-2xl dark:text-white-700 text-black-700">
         {description}
       </p>
     </Container>
