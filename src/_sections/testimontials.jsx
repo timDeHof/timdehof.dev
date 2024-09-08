@@ -1,6 +1,6 @@
 import { clientReviews } from "../constants/index";
 
-const Testimonials = () => {
+const Testimontials = () => {
 	return (
 		<section className='my-20 c-space'>
 			<h3 className='head-text'>Hear from people I've worked with</h3>
@@ -45,4 +45,4 @@ const Testimonials = () => {
 	);
 };
 
-export default Testimonials;
+export default Testimontials;

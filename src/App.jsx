@@ -3,10 +3,9 @@ import Navbar from "./_sections/navbar";
 import Hero from "./_sections/hero";
 import About from "./_sections/about";
 import Projects from "./_sections/projects";
-import Testimonials from "./_sections/testimonials";
+import Testimontials from "./_sections/testimontials";
 import Contact from "./_sections/contact";
 import Footer from "./_sections/footer";
-import Experience from "./_sections/experience";
 const App = () => {
 	return (
 		<main className='container relative mx-auto'>
@@ -14,9 +13,9 @@ const App = () => {
 			<Hero />
 			<About />
 			<Projects />
-			<Testimonials />
-			<Experience />
+			<Testimontials />
 			<Contact />
+
 			<Footer />
 		</main>
 	);
