@@ -309,17 +309,20 @@ export const workExperiences = [
 export const socialMedia = [
 	{
 		id: 1,
-		img: "/git.svg",
+		name: "GitHub",
+		img: "/assets/github.svg",
 		link: "https://github.com/timDeHof",
 	},
 	{
 		id: 2,
-		img: "/twit.svg",
+		name: "Twitter",
+		img: "/assets/twitter.svg",
 		link: "https://twitter.com/timdehof",
 	},
 	{
 		id: 3,
-		img: "/link.svg",
+		name: "LinkedIn",
+		img: "/assets/link.svg",
 		link: "https://www.linkedin.com/in/timothy-dehof/",
 	},
 ];

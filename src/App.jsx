@@ -5,7 +5,7 @@ import About from "./_sections/about";
 import Projects from "./_sections/projects";
 import Testimontials from "./_sections/testimontials";
 import Contact from "./_sections/contact";
-
+import Footer from "./_sections/footer";
 const App = () => {
 	return (
 		<main className='container relative mx-auto'>
@@ -15,6 +15,8 @@ const App = () => {
 			<Projects />
 			<Testimontials />
 			<Contact />
+
+			<Footer />
 		</main>
 	);
 };
