@@ -10,7 +10,7 @@ const CanvasLoader = () => {
 				display: "flex",
 				justifyContent: "center",
 				alignItems: "center",
-				flexDirection: "columns",
+				flexDirection: "column",
 			}}>
 			<span className='canvas-loader'></span>
 			<p

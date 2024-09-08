@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./_sections/navbar";
 import Hero from "./_sections/hero";
 import About from "./_sections/about";
+import Projects from "./_sections/projects";
 
 const App = () => {
 	return (
@@ -9,6 +10,7 @@ const App = () => {
 			<Navbar />
 			<Hero />
 			<About />
+			<Projects />
 		</main>
 	);
 };
