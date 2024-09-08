@@ -276,12 +276,12 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
 	{
 		id: 1,
-		name: "Polyhistor",
-		pos: "Mechanical Engineer",
-		duration: "2014 - 2022",
+		name: "Chingu-Dashboard",
+		pos: "Backend Developer",
+		duration: "2024 - Present",
 		title:
-			"Assisted in the design and development of mechanical systems for a variety of industries, including automotive, aerospace, and medical devices. Worked closely with engineers and designers to ensure the systems met the required specifications and performance standards.",
-		icon: "/assets/framer.svg",
+			"Assisted in the development of new features and functionalities for a web application using Nest.js and Postgres. Worked closely with the client's team to ensure the application met the required specifications and performance standards.",
+		icon: "/assets/notion.svg",
 		animation: "victory",
 	},
 	{
@@ -296,12 +296,12 @@ export const workExperiences = [
 	},
 	{
 		id: 3,
-		name: "Chingu-Dashboard",
-		pos: "Backend Developer",
-		duration: "2024 - Present",
+		name: "Polyhistor",
+		pos: "Mechanical Engineer",
+		duration: "2014 - 2022",
 		title:
-			"Assisted in the development of new features and functionalities for a web application using Nest.js and Postgres. Worked closely with the client's team to ensure the application met the required specifications and performance standards.",
-		icon: "/assets/notion.svg",
+			"Assisted in the design and development of mechanical systems for a variety of industries, including automotive, aerospace, and medical devices. Worked closely with engineers and designers to ensure the systems met the required specifications and performance standards.",
+		icon: "/assets/framer.svg",
 		animation: "salute",
 	},
 ];
