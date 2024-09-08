@@ -24,35 +24,27 @@ export const navLinks = [
 export const clientReviews = [
 	{
 		id: 1,
-		name: "Emily Johnson",
-		position: "Marketing Director at GreenLeaf",
+		name: "Jacek Supernak",
+		position: "Front-End Developer at TeamForward",
 		img: "assets/review1.png",
 		review:
-			"Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+			"Working with Tim on the TeamForward app was an exceptional experience that highlighted his outstanding professional skills. His proactive approach and dedication were evident in every aspect of our collaboration. Tim's communication skills are exemplary, and his work ethic is remarkable, making our teamwork both enjoyable and highly productive. Tim's individual contributions had a significant impact on the project. His ability to deliver results quickly was impressive, and the quality of his work played a major role in shaping our app. His solo tasks were not only well-executed but also instrumental in enhancing the overall value of our project. In conclusion, Tim is a valuable asset to any team.His blend of enthusiasm, skill, and teamwork makes him a standout professional.I highly recommend him for any endeavour he chooses to pursue, confident that he will bring the same level of excellence and success as he did in our project.",
 	},
 	{
 		id: 2,
-		name: "Mark Rogers",
-		position: "Founder of TechGear Shop",
+		name: "Winnie Ng",
+		position: "Software Engineer",
 		img: "assets/review2.png",
 		review:
-			"Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+			"Tim is an excellent frontend developer who approaches collaboration and idea exchange with an open mind. His attention to detail and eagerness to take on new challenges make him an invaluable member of any team. Tim consistently demonstrates a strong work ethic. Through his work, he is passionate about learning and quickly adapting to new technologies. His proactive approach to problem solving, combined with excellent communication skills, fosters a collaborative work environment. Tim's commitment to delivering high-quality, user-friendly solutions exemplifies his commitment to frontend development excellence. Tim is an excellent choice for any project or team looking to improve their frontend capabilities and provide exceptional user experiences.",
 	},
 	{
 		id: 3,
-		name: "John Dohsas",
-		position: "Project Manager at UrbanTech ",
+		name: "Farhad Faraji",
+		position: "Full-stack Software Engineer at TeamForward",
 		img: "assets/review3.png",
 		review:
-			"I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-	},
-	{
-		id: 4,
-		name: "Ether Smith",
-		position: "CEO of BrightStar Enterprises",
-		img: "assets/review4.png",
-		review:
-			"Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+			"It was a pleasure collaborating with Tim on our project, where he served as a dedicated frontend developer. Tim's insatiable curiosity and proactive approach were instrumental in the success of our team. His commitment to excellence was evident in the thorough research he conducted to resolve issues and explore innovative solutions. Tim consistently brought fresh ideas to the table, demonstrating a remarkable ability to think outside the box and propose creative strategies to enhance our project. His enthusiasm for diving into tasks and his passion for finding optimal solutions made a significant impact on our project's outcomes. Tim's relentless pursuit of improvement and his knack for innovation make him a valuable asset to any team. I highly recommend Tim for his inquisitive nature, innovative thinking, and unwavering dedication to achieving exceptional results.",
 	},
 ];
 
@@ -284,32 +276,50 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
 	{
 		id: 1,
-		name: "Framer",
-		pos: "Lead Web Developer",
-		duration: "2022 - Present",
+		name: "Polyhistor",
+		pos: "Mechanical Engineer",
+		duration: "2014 - 2022",
 		title:
-			"Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
+			"Assisted in the design and development of mechanical systems for a variety of industries, including automotive, aerospace, and medical devices. Worked closely with engineers and designers to ensure the systems met the required specifications and performance standards.",
 		icon: "/assets/framer.svg",
 		animation: "victory",
 	},
 	{
 		id: 2,
-		name: "Figma",
-		pos: "Web Developer",
-		duration: "2020 - 2022",
+		name: "Chingu-TeamForward",
+		pos: "Full-Stack Developer",
+		duration: "2023 - Present",
 		title:
-			"Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
+			"Led the dev of a web-based platform using Next.js and React.js for a client, focusing on frontend development and responsive design. Collaborated with the client's team to implement new features and improve the overall user experience.",
 		icon: "/assets/figma.svg",
 		animation: "clapping",
 	},
 	{
 		id: 3,
-		name: "Notion",
-		pos: "Junior Web Developer",
-		duration: "2019 - 2020",
+		name: "Chingu-Dashboard",
+		pos: "Backend Developer",
+		duration: "2024 - Present",
 		title:
-			"Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+			"Assisted in the development of new features and functionalities for a web application using Nest.js and Postgres. Worked closely with the client's team to ensure the application met the required specifications and performance standards.",
 		icon: "/assets/notion.svg",
 		animation: "salute",
+	},
+];
+
+export const socialMedia = [
+	{
+		id: 1,
+		img: "/git.svg",
+		link: "https://github.com/timDeHof",
+	},
+	{
+		id: 2,
+		img: "/twit.svg",
+		link: "https://twitter.com/timdehof",
+	},
+	{
+		id: 3,
+		img: "/link.svg",
+		link: "https://www.linkedin.com/in/timothy-dehof/",
 	},
 ];
