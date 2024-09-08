@@ -10,7 +10,7 @@ import ReactLogo from "../_components/ReactLogo";
 import Cube from "../_components/Cube";
 import Rings from "../_components/Rings";
 import CanvasLoader from "../_components/CanvasLoader";
-import { calculateSizes } from "../../constants/index";
+import { calculateSizes } from "../constants/index";
 import HeroCamera from "../_components/HeroCamera";
 import Button from "../_components/Button";
 

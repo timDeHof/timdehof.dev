@@ -1,5 +1,5 @@
 import { Suspense, useState } from "react";
-import { myProjects } from "../../constants/index";
+import { myProjects } from "../constants/index";
 import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
 import DemoComputer from "../_components/DemoComputer";
