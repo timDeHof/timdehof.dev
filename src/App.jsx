@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "./_sections/navbar";
 import Hero from "./_sections/hero";
+import About from "./_sections/about";
 
 const App = () => {
 	return (
-		<main className='relative mx-auto'>
+		<main className='container relative mx-auto'>
 			<Navbar />
 			<Hero />
+			<About />
 		</main>
 	);
 };
