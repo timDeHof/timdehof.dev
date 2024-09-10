@@ -9,7 +9,12 @@
 }
 
 body {
-	background: #010103;
+	background: radial-gradient(
+		circle,
+		rgba(12, 10, 9, 1) 0%,
+		rgba(9, 38, 92, 1) 50%,
+		rgba(12, 10, 9, 1) 100%
+	);
 	font-family: "General Sans", sans-serif;
 }
 
