@@ -5,6 +5,7 @@ import About from "./_sections/about";
 import Projects from "./_sections/projects";
 import Testimontials from "./_sections/testimontials";
 import Contact from "./_sections/contact";
+import WorkExperience from "./_sections/experience";
 import Footer from "./_sections/footer";
 const App = () => {
 	return (
@@ -14,6 +15,9 @@ const App = () => {
 			<About />
 			<Projects />
 			<Testimontials />
+
+			<WorkExperience />
+			{/* <Skills /> */}
 			<Contact />
 
 			<Footer />

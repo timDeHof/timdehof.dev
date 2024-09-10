@@ -26,7 +26,7 @@ export const clientReviews = [
 		id: 1,
 		name: "Jacek Supernak",
 		position: "Front-End Developer at TeamForward",
-		img: "assets/review1.png",
+		img: "assets/review2.png",
 		review:
 			"Working with Tim on the TeamForward app was an exceptional experience that highlighted his outstanding professional skills. His proactive approach and dedication were evident in every aspect of our collaboration. Tim's communication skills are exemplary, and his work ethic is remarkable, making our teamwork both enjoyable and highly productive. Tim's individual contributions had a significant impact on the project. His ability to deliver results quickly was impressive, and the quality of his work played a major role in shaping our app. His solo tasks were not only well-executed but also instrumental in enhancing the overall value of our project. In conclusion, Tim is a valuable asset to any team.His blend of enthusiasm, skill, and teamwork makes him a standout professional.I highly recommend him for any endeavour he chooses to pursue, confident that he will bring the same level of excellence and success as he did in our project.",
 	},
@@ -34,7 +34,7 @@ export const clientReviews = [
 		id: 2,
 		name: "Winnie Ng",
 		position: "Software Engineer",
-		img: "assets/review2.png",
+		img: "assets/review1.png",
 		review:
 			"Tim is an excellent frontend developer who approaches collaboration and idea exchange with an open mind. His attention to detail and eagerness to take on new challenges make him an invaluable member of any team. Tim consistently demonstrates a strong work ethic. Through his work, he is passionate about learning and quickly adapting to new technologies. His proactive approach to problem solving, combined with excellent communication skills, fosters a collaborative work environment. Tim's commitment to delivering high-quality, user-friendly solutions exemplifies his commitment to frontend development excellence. Tim is an excellent choice for any project or team looking to improve their frontend capabilities and provide exceptional user experiences.",
 	},
