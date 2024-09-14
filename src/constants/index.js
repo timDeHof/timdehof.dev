@@ -167,7 +167,7 @@ export const myProjects = [
 		desc: "Yumyumyes is a comprehensive online recipe platform that offers users a centralized recipe search. It allows users to find recipes based on multiple ingredients, dietary restrictions, and cooking methods.",
 		subdesc:
 			"Built with react.js, tailwind CSS, javascript and tanstack query, Yumyumyes ensures a smooth and secure recipe search experience, tailored to meet the needs of modern consumers.",
-		href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
+		href: "https://www.yumyumyes.com",
 		texture: "/textures/project/project4.mp4",
 		logo: "/assets/project-logo4.png",
 		logoStyle: {
