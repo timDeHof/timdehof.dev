@@ -163,19 +163,19 @@ export const myProjects = [
 		],
 	},
 	{
-		title: "Horizon - Online Banking Platform",
-		desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
+		title: "YumyumYes - Online Recipe Platform",
+		desc: "Yumyumyes is a comprehensive online recipe platform that offers users a centralized recipe search. It allows users to find recipes based on multiple ingredients, dietary restrictions, and cooking methods.",
 		subdesc:
-			"Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
+			"Built with react.js, tailwind CSS, javascript and tanstack query, Yumyumyes ensures a smooth and secure recipe search experience, tailored to meet the needs of modern consumers.",
 		href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
 		texture: "/textures/project/project4.mp4",
 		logo: "/assets/project-logo4.png",
 		logoStyle: {
-			backgroundColor: "#0E1F38",
-			border: "0.2px solid #0E2D58",
-			boxShadow: "0px 0px 60px 0px #2F67B64D",
+			backgroundColor: "#2A1816",
+			border: "0.2px solid #36201D",
+			boxShadow: "0px 0px 60px 0px #AA3C304D",
 		},
-		spotlight: "/assets/spotlight4.png",
+		spotlight: "/assets/spotlight1.png",
 		tags: [
 			{
 				id: 1,
@@ -189,21 +189,21 @@ export const myProjects = [
 			},
 			{
 				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
+				name: "JavaScript",
+				path: "/assets/javascript.png",
 			},
 			{
 				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
+				name: "Tanstack Query",
+				path: "/assets/tanstack.svg",
 			},
 		],
 	},
 	{
-		title: "Imaginify - AI Photo Manipulation App",
-		desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
+		title: "Reelwatch - Movie Watchlist App",
+		desc: "Reelwatch is a groundbreaking Software-as-a-Service application that empowers users to create Movie watchlists. With features like autocomplete search, personalized recommendations, and a user-centric approach.",
 		subdesc:
-			"Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
+			"Built with Next.js 14, Tailwind CSS, TypeScript, Tanstack Query, and Appwrite.io combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
 		href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
 		texture: "/textures/project/project5.mp4",
 		logo: "/assets/project-logo5.png",
@@ -231,8 +231,13 @@ export const myProjects = [
 			},
 			{
 				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
+				name: "Tanstack Query",
+				path: "/assets/tanstack.svg",
+			},
+			{
+				id: 5,
+				name: "Appwrite.io",
+				path: "/assets/app.svg",
 			},
 		],
 	},
