@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Globe } from "../_components/GridGlobe.jsx";
-
+import InfiniteMarquee from "../_components/InfiniteMarquee.jsx";
 import Button from "../_components/Button.jsx";
 
 const About = () => {
@@ -14,6 +14,9 @@ const About = () => {
 			setHasCopied(false);
 		}, 2000);
 	};
+	const topList = ["ReactJS", "Next.js", "Express", "Typescript"];
+	const middleList = ["Node.js", "AWS", "NestJS", "MongoDB"];
+	const bottomList = ["Git", "Figma", "ClickUp", "Prisma"];
 
 	return (
 		<section className='my-20 c-space' id='about'>
@@ -39,17 +42,35 @@ const About = () => {
 
 				<div className='col-span-1 xl:row-span-3'>
 					<div className='grid-container'>
-						<img
-							src='assets/grid2.png'
-							alt='grid-2'
-							className='w-full sm:h-[276px] h-fit object-contain'
-						/>
-
+						<div className='absolute inset-0 z-10 pointer-events-none h-3/4'>
+							<div className='absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-[#10132E] to-transparent'></div>
+							<div className='absolute inset-y-0 right-0 w-1/6 bg-gradient-to-r  from-transparent to-[#10132E]'></div>
+						</div>
+						<div className='flex flex-col w-full gap-y-4 lg:gap-y-6'>
+							<InfiniteMarquee
+								items={topList}
+								direction='left'
+								speed={40}
+								gap={16}
+							/>
+							<InfiniteMarquee
+								items={middleList}
+								direction='right'
+								speed={40}
+								gap={16}
+							/>
+							<InfiniteMarquee
+								items={bottomList}
+								direction='left'
+								speed={40}
+								gap={16}
+							/>
+						</div>
 						<div>
 							<p className='grid-headtext'>Tech Stack</p>
 							<p className='grid-subtext'>
-								I specialize in a variety of languages, frameworks, and tools
-								that allow me to build robust and scalable applications
+								I constantly try to improve my skills and knowledge in various
+								languages, frameworks, and tools.
 							</p>
 						</div>
 					</div>
@@ -121,3 +142,18 @@ const About = () => {
 };
 
 export default About;
+
+const ScrollingList = ({ items, className }) => {
+	console.log("ScrollingList items:", [...items, ...items]);
+	return (
+		<div className={`flex items-center ${className}`}>
+			{[...items, ...items].map((item, i) => (
+				<span
+					key={i}
+					className='lg:py-3 lg:px-4 py-2 px-3 text-xs lg:text-sm opacity-50 text-white min-w-24 lg:opacity-100 rounded-lg text-center bg-[#10132E] whitespace-nowrap'>
+					{item}
+				</span>
+			))}
+		</div>
+	);
+};

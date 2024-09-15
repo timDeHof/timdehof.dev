@@ -67,15 +67,15 @@ body {
 
 	/* about section */
 	.grid-container {
-		@apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+		@apply w-full h-full border border-white/[0.1] bg-black-200/[0.6] rounded-3xl sm:p-7 p-4 flex flex-col gap-5 overflow-hidden hover:shadow-xl transition duration-200 shadow-black-300 dark:shadow-none justify-between space-y-4 relative;
 	}
 
 	.grid-headtext {
-		@apply text-xl font-semibold mb-2 text-white font-generalsans;
+		@apply text-xl lg:text-2xl font-semibold mb-2 text-white font-generalsans;
 	}
 
 	.grid-subtext {
-		@apply text-[#afb0b6] text-base font-generalsans;
+		@apply text-[#afb0b6] font-generalsans text-sm lg:text-base;
 	}
 
 	.copy-container {

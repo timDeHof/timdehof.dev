@@ -26,6 +26,23 @@ export default {
 			backgroundImage: {
 				terminal: "url('/assets/terminal.png')",
 			},
+			backgroundColor: {
+				grid: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+			},
+			animation: {
+				"scroll-left": "scroll-left 15s linear infinite",
+				"scroll-right": "scroll-right 15s linear infinite",
+			},
+			keyframes: {
+				"scroll-left": {
+					"0%": { transform: "translateX(-50%)" },
+					"100%": { transform: "translateX(0)" },
+				},
+				"scroll-right": {
+					"0%": { transform: "translateX(0)" },
+					"100%": { transform: "translateX(-50%)" },
+				},
+			},
 		},
 	},
 	plugins: [],
