@@ -1,11 +1,27 @@
 import React from "react";
 import { navLinks } from "../constants";
 const NavItems = () => {
+	const handleClick = (e, href) => {
+		e.preventDefault();
+		const element = document.querySelector(href);
+		const navbarHeight = document.querySelector("header").offsetHeight;
+		const elementPosition = element.getBoundingClientRect().top;
+		const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+		window.scrollTo({
+			top: offsetPosition,
+			behavior: "smooth",
+		});
+	};
+
 	return (
 		<ul className='nav-ul'>
 			{navLinks.map(({ id, name, href }) => (
 				<li key={id} className='nav-li'>
-					<a href={href} className='nav-li_a' onClick={() => {}}>
+					<a
+						href={href}
+						className='nav-li_a'
+						onClick={(e) => handleClick(e, href)}>
 						{name}
 					</a>
 				</li>
@@ -20,7 +36,7 @@ const Navbar = () => {
 	const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen);
 
 	return (
-		<header className='fixed top-0 left-0 right-0 z-50 bg-black/90'>
+		<header className='fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm'>
 			<div className='container mx-auto'>
 				<div className='flex items-center justify-between py-5 mx-auto c-space'>
 					<a

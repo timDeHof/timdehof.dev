@@ -19,7 +19,7 @@ const About = () => {
 	const bottomList = ["Git", "Figma", "ClickUp", "Prisma"];
 
 	return (
-		<section className='my-20 c-space' id='about'>
+		<section className='pt-24 my-20 c-space' id='about'>
 			<div className='grid h-full grid-cols-1 gap-5 xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2'>
 				<div className='col-span-1 xl:row-span-3'>
 					<div className='grid-container'>

@@ -2,7 +2,7 @@ import { clientReviews } from "../constants/index";
 
 const Testimontials = () => {
 	return (
-		<section className='my-20 c-space'>
+		<section className='pt-24 my-20 c-space' id='testimonials'>
 			<h3 className='head-text'>Hear from people I've worked with</h3>
 
 			<div className='client-container'>
