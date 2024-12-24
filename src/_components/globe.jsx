@@ -158,6 +158,28 @@ export function Globe({ globeConfig, data }) {
 		};
 	}, [globeRef.current, globeData]);
 
+	const validateArc = (arc) => {
+		const required = [
+			"startLat",
+			"startLng",
+			"endLat",
+			"endLng",
+			"arcAlt",
+			"color",
+		];
+		const missing = required.filter((prop) => !(prop in arc));
+		if (missing.length > 0) {
+			console.warn(
+				`Arc missing required properties: ${missing.join(", ")}`,
+				arc,
+			);
+			return false;
+		}
+		return true;
+	};
+
+	const validArcs = data.filter(validateArc);
+
 	return (
 		<>
 			<threeGlobe ref={globeRef} />
