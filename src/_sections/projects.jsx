@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
 import DemoComputer from "../_components/DemoComputer";
 import CanvasLoader from "../_components/CanvasLoader";
-
+import { OptimizedImage } from "../utils";
 const projectsCount = myProjects.length;
 
 const Projects = () => {
@@ -26,7 +26,7 @@ const Projects = () => {
 			<div className='grid w-full grid-cols-1 gap-5 mt-12 lg:grid-cols-2'>
 				<div className='relative flex flex-col gap-5 px-5 py-10 shadow-2xl sm:p-10 shadow-black-200'>
 					<div className='absolute top-0 right-0'>
-						<img
+						<OptimizedImage
 							src={currentProject.spotlight}
 							alt='project1'
 							className='object-cover w-full h-96 rounded-xl'
@@ -35,7 +35,7 @@ const Projects = () => {
 					<div
 						className='p-3 rounded-lg backdrop-filter backdrop-blur-3xl w-fit'
 						style={currentProject.logoStyle}>
-						<img
+						<OptimizedImage
 							src={currentProject.logo}
 							alt='logo'
 							className='object-cover rounded-lg size-14'
